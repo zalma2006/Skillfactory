@@ -93,7 +93,7 @@ def game():
         else:
             continue
         second = input('Введите y чтобы сыграть ещё разок')
-        if second == 'y':
+        if second.lower() == 'y':
             continue
         else:
             break
