@@ -51,7 +51,7 @@ def write(x, y, num, area):
 def check_win(area):
     win_list = [
         ((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)), ((2, 0), (2, 1), (2, 2)),
-        ((0, 0), (1, 0), (2, 0)), ((0, 1), (1, 1), (1, 1)), ((0, 2), (1, 2), (2, 2)),
+        ((0, 0), (1, 0), (2, 0)), ((0, 1), (1, 1), (2, 1)), ((0, 2), (1, 2), (2, 2)),
         ((0, 0), (1, 1), (2, 2)), ((0, 2), (1, 1), (2, 0))]
     for cord in win_list:
         a = cord[0]
@@ -87,16 +87,17 @@ def game():
                     print('Ничья!')
                     show(area=area)
                     break
-            second = input('Введите y чтобы сыграть ещё разок')
-            if second == 'y':
-                continue
-            else:
-                break
         elif chois == 2:
             print('До скорых встреч!')
             break
         else:
             continue
+        second = input('Введите y чтобы сыграть ещё разок')
+        if second == 'y':
+            continue
+        else:
+            break
+
 
 
 game()
