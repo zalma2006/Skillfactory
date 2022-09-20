@@ -132,14 +132,7 @@ class Board:
                     print("Корабль ранен!")
                     return True
 
-        self.field[d.x][d.y] = "."
-        print("Мимо!")
-        return False
-
-    def begin(self):
-        self.busy = []
-
-
+        self.field[d.x][d.y]
 class Player:
     def __init__(self, board, enemy):
         self.board = board
