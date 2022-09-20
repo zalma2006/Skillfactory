@@ -13,7 +13,7 @@ def token_stock(path: str) -> str:
         return tokens
     except FileNotFoundError:
         print('Файл не найден, значение ключа взято по умолчанию')
-        tokens = {'StockChangeBot': '5367926693:AAHMdbkhToEPlNyLeUXQWMSlAtr9j3aB-Js'}
+        tokens = {'StockChangeBot': ''} # в значение ввести ТОКЕН
         return tokens
 
 
